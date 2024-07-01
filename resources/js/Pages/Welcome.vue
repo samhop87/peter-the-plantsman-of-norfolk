@@ -32,7 +32,7 @@ function handleImageError() {
         <img
             id="background"
             class="absolute -left-20 top-0 max-w-[877px]"
-            src="https://laravel.com/assets/img/welcome/background.svg"
+            src="{{ asset('img/welcome-background.svg') }}"
         />
         <div
             class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white"
@@ -178,9 +178,7 @@ function handleImageError() {
                                 <h2 class="text-xl font-semibold text-black dark:text-white">Laracasts</h2>
 
                                 <p class="mt-4 text-sm/relaxed">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript
-                                    development. Check them out, see for yourself, and massively level up your
-                                    development skills in the process.
+                                    Test
                                 </p>
                             </div>
 
