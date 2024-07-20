@@ -42,10 +42,10 @@ export default {
 
 <template>
     <div class="root">
-        <img class="background" ref="background" src="../../../public/images/page_background.jpg" />
+        <img class="background w-full" ref="background" src="../../../public/images/towngarden.jpg" />
         <div class="section section-1" ref="first">
             <div>
-                <h1>Parallax Made Easy.</h1>
+                <img src="../../../public/images/logo.png"/>
             </div>
         </div>
         <div class="section section-2" ref="second">
