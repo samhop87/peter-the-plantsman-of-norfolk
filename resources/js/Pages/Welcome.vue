@@ -1,5 +1,6 @@
 <script>
 import { ref, onMounted, onUnmounted } from 'vue'
+
 export default {
     setup() {
         const background = ref(null)
@@ -45,7 +46,7 @@ export default {
         <img class="background w-full" ref="background" src="../../../public/images/towngarden.jpg" />
         <div class="section section-1" ref="first">
             <div>
-                <img src="../../../public/images/logo.png"/>
+                <img src="../../../public/images/logo.png" />
             </div>
         </div>
         <div class="section section-2" ref="second">
@@ -54,12 +55,14 @@ export default {
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
             </div>
         </div>
+        <div class="section section-3">
+            <h2>New Section</h2>
+            <p>Content for the new section...</p>
+        </div>
     </div>
 </template>
 
 <style scoped>
-img.background,
-
 img.background {
     /* Positioning */
     position: fixed;
@@ -104,6 +107,23 @@ img.background {
 }
 
 .section-2 p {
+    line-height: 150%;
+}
+
+.section-3 {
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.section-3 h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.section-3 p {
     line-height: 150%;
 }
 </style>
